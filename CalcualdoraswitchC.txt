@@ -1,0 +1,97 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+float num1,num2,res;
+
+char val;
+
+inicio:
+
+cout<<"CALCULADORA Switch C++\n\n\n";
+
+cout<< "Digite o calculo (+) (-) (x) (/)\n\n\n";
+
+cin>> val;
+
+switch (val)
+
+{
+case '+':
+
+    cout<<"Soma\n\n\n";
+    cout<<"Entre com o operador\n\n\n";
+    
+    cin>>num1;
+
+    cout<<"Entre com o operado\n\n\n";
+
+    cin>>num2;
+
+
+    cout<<"Resultado  [ "<<num1+num2<<" ]\n\n\n";
+
+    break;
+
+case '-':
+
+    cout<<"Subtrair\n\n\n";
+    cout<<"Entre com o operador\n\n\n";
+    
+    cin>>num1;
+
+    cout<<"Entre com o operado\n\n\n";
+
+    cin>>num2;
+
+
+    cout<<"Resultado  [ "<<num1-num2<<" ]\n\n\n";
+
+    break;    
+
+case 'x':
+
+    cout<<"Multiplica\n\n\n";
+    cout<<"Entre com o operador\n\n\n";
+    
+    cin>>num1;
+
+    cout<<"Entre com o operado\n\n\n";
+
+    cin>>num2;
+
+
+    cout<<"Resultado  [ "<<num1*num2<<" ]\n\n\n";
+
+    break;    
+case '/':
+
+    cout<<"Divide\n\n\n";
+    cout<<"Entre com o operador\n\n\n";
+    
+    cin>>num1;
+
+    cout<<"Entre com o operado\n\n\n";
+
+    cin>>num2;
+
+
+    cout<<"Resultado  [ "<<num1/num2<<" ]\n\n\n";
+
+    break;
+default:
+    break;
+}
+
+system ("pause");
+
+system ("cls");
+
+goto inicio;
+
+
+
+    return 0;
+}
